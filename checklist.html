@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Чек-лист: 5 шагов к финансовому балансу</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(135deg, #0f0c29, #302b63, #24243e);
+      color: #e0e0e0;
+      min-height: 100vh;
+      padding: 40px 20px;
+    }
+    .page {
+      max-width: 760px;
+      margin: 0 auto;
+      background: rgba(255,255,255,0.05);
+      border: 1px solid rgba(255,255,255,0.1);
+      border-radius: 20px;
+      padding: 40px 36px;
+    }
+    h1 {
+      text-align: center;
+      font-size: 1.8em;
+      margin-bottom: 6px;
+      background: linear-gradient(90deg, #f7971e, #ffd200);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+    .sub {
+      text-align: center;
+      color: #999;
+      margin-bottom: 32px;
+      font-size: 1em;
+    }
+    .step {
+      background: rgba(255,255,255,0.04);
+      border: 1px solid rgba(255,255,255,0.08);
+      border-radius: 14px;
+      padding: 22px 24px;
+      margin-bottom: 18px;
+      border-left: 4px solid;
+    }
+    .step-num {
+      display: inline-block;
+      width: 32px;
+      height: 32px;
+      line-height: 32px;
+      text-align: center;
+      border-radius: 50%;
+      font-weight: 700;
+      font-size: 0.95em;
+      margin-right: 10px;
+      color: #1a1a2e;
+    }
+    .step h2 {
+      display: inline;
+      font-size: 1.1em;
+      color: #fff;
+    }
+    .step p {
+      margin-top: 10px;
+      color: #bbb;
+      line-height: 1.65;
+      font-size: 0.93em;
+    }
+    .step .tasks {
+      margin-top: 12px;
+      padding-left: 8px;
+    }
+    .step .tasks li {
+      list-style: none;
+      padding: 5px 0;
+      color: #ccc;
+      font-size: 0.91em;
+      line-height: 1.5;
+    }
+    .step .tasks li::before {
+      content: '☐ ';
+      color: #ffd200;
+      font-size: 1.1em;
+    }
+    .step1 { border-left-color: #4caf50; }
+    .step1 .step-num { background: #4caf50; }
+    .step2 { border-left-color: #ff9800; }
+    .step2 .step-num { background: #ff9800; }
+    .step3 { border-left-color: #2196f3; }
+    .step3 .step-num { background: #2196f3; }
+    .step4 { border-left-color: #9c27b0; }
+    .step4 .step-num { background: #9c27b0; }
+    .step5 { border-left-color: #e91e63; }
+    .step5 .step-num { background: #e91e63; }
+
+    .bonus {
+      background: linear-gradient(135deg, rgba(255,210,0,0.1), rgba(247,151,30,0.1));
+      border: 1px solid rgba(255,210,0,0.25);
+      border-radius: 14px;
+      padding: 22px 24px;
+      margin-top: 24px;
+      text-align: center;
+    }
+    .bonus h3 {
+      color: #ffd200;
+      margin-bottom: 8px;
+      font-size: 1.15em;
+    }
+    .bonus p {
+      color: #bbb;
+      font-size: 0.93em;
+      line-height: 1.6;
+    }
+    .bonus a {
+      display: inline-block;
+      margin-top: 14px;
+      background: linear-gradient(135deg, #26c6da, #00acc1);
+      color: #fff;
+      text-decoration: none;
+      padding: 12px 36px;
+      border-radius: 50px;
+      font-weight: 700;
+      font-size: 1em;
+      transition: transform 0.2s;
+    }
+    .bonus a:hover { transform: scale(1.04); }
+
+    .footer {
+      text-align: center;
+      margin-top: 28px;
+      color: #666;
+      font-size: 0.85em;
+    }
+
+    @media print {
+      body { background: #fff; color: #222; padding: 10px; }
+      .page { border: none; background: none; padding: 20px; }
+      .step { border-color: #ccc; background: #f9f9f9; }
+      .step h2 { color: #222; }
+      .step p, .step .tasks li { color: #444; }
+      h1 { -webkit-text-fill-color: #f7971e; }
+      .bonus a { background: #00acc1; }
+    }
+  </style>
+</head>
+<body>
+  <div class="page">
+    <div style="text-align:center; margin-bottom:16px;">
+      <img src="acceptch_logotype_vertical (1).jpg" alt="Акцепт·Ч" style="max-width:140px; border-radius:10px;">
+    </div>
+    <h1>5 шагов к финансовому балансу</h1>
+    <p class="sub">Персональный чек-лист для наведения порядка в финансах</p>
+
+    <div class="step step1">
+      <span class="step-num">1</span>
+      <h2>Наведи порядок в доходах</h2>
+      <p>Прежде чем планировать — нужно понять, сколько ты реально зарабатываешь из всех источников.</p>
+      <ul class="tasks">
+        <li>Выпиши все источники дохода (зарплата, подработки, аренда, проценты)</li>
+        <li>Посчитай средний ежемесячный доход за последние 3 месяца</li>
+        <li>Определи, какой доход стабильный, а какой — разовый</li>
+        <li>Поставь цель: на сколько хочешь увеличить доход через 6 месяцев</li>
+        <li>Запиши 3 конкретных действия для роста дохода</li>
+      </ul>
+    </div>
+
+    <div class="step step2">
+      <span class="step-num">2</span>
+      <h2>Возьми расходы под контроль</h2>
+      <p>Деньги утекают незаметно. Контроль расходов — это не экономия на всём, а осознанные траты.</p>
+      <ul class="tasks">
+        <li>Установи приложение для учёта расходов (CoinKeeper, Дзен-мани или таблица)</li>
+        <li>Записывай ВСЕ траты минимум 30 дней подряд</li>
+        <li>Раздели расходы на 3 категории: обязательные, желательные, лишние</li>
+        <li>Примени правило 50/30/20: необходимое / желания / накопления</li>
+        <li>Найди 3 статьи расходов, которые можно сократить безболезненно</li>
+      </ul>
+    </div>
+
+    <div class="step step3">
+      <span class="step-num">3</span>
+      <h2>Создай подушку безопасности</h2>
+      <p>Подушка — это не роскошь, а фундамент. Без неё любой форс-мажор может откатить тебя назад.</p>
+      <ul class="tasks">
+        <li>Рассчитай сумму обязательных расходов за 1 месяц</li>
+        <li>Цель подушки = эта сумма × 6 месяцев</li>
+        <li>Открой отдельный накопительный счёт (не трогай его!)</li>
+        <li>Настрой автоперевод: хотя бы 10% от дохода в день зарплаты</li>
+        <li>Не инвестируй, пока подушка не собрана хотя бы на 3 месяца</li>
+      </ul>
+    </div>
+
+    <div class="step step4">
+      <span class="step-num">4</span>
+      <h2>Начни путь инвестора</h2>
+      <p>Деньги должны работать. Даже маленькая сумма, вложенная регулярно, создаёт капитал.</p>
+      <ul class="tasks">
+        <li>Изучи базовые инструменты: вклады, облигации, индексные фонды</li>
+        <li>Открой брокерский счёт (ИИС для налогового вычета)</li>
+        <li>Начни с простой стратегии: ежемесячная покупка индексного фонда</li>
+        <li>Определи горизонт инвестирования (3 / 5 / 10+ лет)</li>
+        <li>Никогда не инвестируй последние деньги или заёмные средства</li>
+      </ul>
+    </div>
+
+    <div class="step step5">
+      <span class="step-num">5</span>
+      <h2>Защити себя и мечтай смело</h2>
+      <p>Финансовая защита + чёткие цели = спокойствие и движение вперёд.</p>
+      <ul class="tasks">
+        <li>Оформи базовую страховку: жизнь + здоровье</li>
+        <li>Проверь, застраховано ли имущество (квартира, авто)</li>
+        <li>Запиши 3 главные мечты и переведи их в цифры (сумма + срок)</li>
+        <li>Разбей большую цель на ежемесячные шаги</li>
+        <li>Пересматривай свой финансовый план каждые 3 месяца</li>
+      </ul>
+    </div>
+
+    <div class="bonus">
+      <h3>🎯 Готов к следующему шагу?</h3>
+      <p>Запишись на бесплатный персональный разбор — вместе составим<br>твой план достижения финансовых целей</p>
+      <a href="https://t.me/Bisness_cons2515" target="_blank">📩 Записаться на разбор</a>
+    </div>
+
+    <p class="footer">
+      <strong style="color:#ccc;">Эксперт по налогам и финансам Елизавета Дорофеева</strong><br>
+      📱 +7 967 470-25-15 · 💬 @Bisness_cons2515
+    </p>
+  </div>
+</body>
+</html>
